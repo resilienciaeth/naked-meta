@@ -173,8 +173,7 @@ module.exports = {
       poppins: ['Poppins', 'sans-serif'],
       finlandica: ['Finlandica', 'italic'],
       integral: ['Integral'],
-      sf: ['sf'],
-      sfnormal: ['sfnormal'],
+      sfpro: ['sfpro', 'sans-serif'],
 
     },
   },

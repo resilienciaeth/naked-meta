@@ -6,17 +6,17 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'sf';
-    src: url('/public/fonts/sf/SFPRODISPLAYBOLD.OTF');
-    font-weight: 700;
+    font-family: 'sfpro';
+    src: url('/public/fonts/sfpro/SFPRODISPLAYREGULAR.OTF');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'sfnormal';
-    src: url('/public/fonts/sf/SFPRODISPLAYREGULAR.OTF');
-    font-weight: 300;
-    font-style: normal;
+    font-family: 'sfpro';
+    src: url('/public/fonts/sfpro/SFPRODISPLAYBOLD.OTF');
+    font-weight: 700;
+    font-style: bold;
 }
 
 

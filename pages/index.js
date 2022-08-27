@@ -20,14 +20,14 @@ function Home() {
             <h1 className="text-black font-integral md:mt-10 p-8 md:p-0 text-left text-5xl  minmd:text-7xl md:text-2xl md:text-center ">
               HACIENDO EL FUTURO ACCESIBLE PARA TODOS
             </h1>
-            <p className="font-sfnormal md:mt-5 font-normal md:text-center text-xl md:text-base px-8 nm:px-6 text-black ">Te ayudamos a encontrar y compartir tu verdadera esencia a través de la Web3.</p>
+            <p className="font-sfpro md:mt-5 font-normal md:text-center text-xl md:text-base px-8 nm:px-6 text-black ">Te ayudamos a encontrar y compartir tu verdadera esencia a través de la Web3.</p>
             <div className="px-6">
               <button
                 type="button"
-                className=" border mt-4 bg-black text-2xl nm:text-xl md:text-md py-2 px-8 nm:px-6  minlg:px-8 rounded-full font-sf text-left text-white"
+                className=" border mt-4 bg-black text-xl nm:text-xl md:text-md py-2 px-8 nm:px-6  minlg:px-8 rounded-full font-sfpro text-left text-white"
                 onClick={() => {}}
               >
-                Conocenos
+                Conócenos
 
               </button>
             </div>
@@ -46,8 +46,8 @@ function Home() {
           <div data-aos="flip-left" className='relative md:hidden z-1  max-w-full flex w-full sm:w-full sm:h-275 nm:h-[320px] h-[500px] rounded-3xl items-center justify-center  bg-cover bg-repeat-x lg:bg-cover md:bg-cover m-0 mb-6"'>
             <Image src={images.banner} className="rounded-3xl" layout="fill" objectFit="cover" priority />
             <div className="flex absolute flex-col">
-              <p className="flex-1 text-white font-sfnormal text-6xl  text-center">CONCIENCIA</p>
-              <p className="flex-1 text-white font-sfnormal text-lg  text-center">Naked Meta nace para acompañarte en la exploración del mundo Web3. Nuestro objetivo es que puedas comprenderlo para sumergirte de forma consciente, sencilla y eficaz.</p>
+              <p className="flex-1 text-white  text-6xl font-sfpro font-bold text-center">CONCIENCIA</p>
+              <p className="flex-1 text-white font-sfpro text-lg px-[15rem]   text-center">Naked Meta nace para acompañarte en la exploración del mundo Web3. Nuestro objetivo es que puedas comprenderlo para sumergirte de forma consciente, sencilla y eficaz.</p>
             </div>
           </div>
           <div className="flex nm:flex-row md:flex-col nm:-mt-6">

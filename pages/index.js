@@ -51,20 +51,20 @@ function Home() {
             </div>
           </div>
           <div className="flex nm:flex-row md:flex-col nm:-mt-6">
-            <div data-aos="zoom-in" className="flex z-1 w-[33.3%] h-[250px] md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
-              <div className="flex items-center justify-center cursor-pointer hover:shadow-2xl">
+            <div data-aos="zoom-in" className="flex z-1 w-[33.3%] px-2 h-[250px] md:w-full md:h-[33%] rounded-full  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
+              <div className="flex items-center justify-center ">
                 <Image src={images.banner1} className="rounded-3xl md:max-w-[339px] md:max-h-[275px]" layout="" objectFit="cover" priority />
                 <p className="absolute flex-1 text-white font-sfpro font-bold md:text-7xl sm:text-5xl text-6xl lg:text-4xl md:justify-self-center text-center">Creatividad</p>
               </div>
             </div>
-            <div data-aos="zoom-in" className="flex z-1 w-[33.3%] h-[250px] md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
-              <div className="flex items-center justify-center cursor-pointer hover:shadow-2xl">
+            <div data-aos="zoom-in" className="flex z-1 w-[33.3%] px-2 h-[250px] md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
+              <div className="flex items-center justify-center ">
                 <Image src={images.banner2} className="rounded-3xl md:max-w-[339px] md:max-h-[275px]" layout="" objectFit="cover" priority />
                 <p className="absolute flex-1 text-white font-sfpro font-bold md:text-7xl sm:text-5xl text-6xl lg:text-4xl md:justify-self-center text-center">Conexión</p>
               </div>
             </div>
-            <div data-aos="zoom-in" className="flex z-1 w-[33.3%] h-[250px] md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
-              <div className="flex items-center justify-center cursor-pointer hover:shadow-2xl">
+            <div data-aos="zoom-in" className="flex z-1 w-[33.3%] bg-transparent px-2 h-[250px] md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
+              <div className="flex items-center justify-center ">
                 <Image src={images.banner3} w={31} className="rounded-3xl  md:w-357 md:h-275" layout="" objectFit="cover" priority />
                 <h1 className="absolute flex-1  text-white font-sfpro font-bold text-6xl sm:text-5xl lg:text-4xl md:text-7xl md:justify-self-center text-center">Curiosidad</h1>
               </div>

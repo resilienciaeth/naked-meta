@@ -51,22 +51,22 @@ function Home() {
             </div>
           </div>
           <div className="flex nm:flex-row md:flex-col nm:-mt-6">
-            <div className="flex relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[10rem] sm:mt-[5rem] xs:mt-[2rem] justify-between md:items-center md:bg-cover md:justify-center">
-              <div data-aos="zoom-in" className="flex items-center justify-center md:py-4 h-317 md:w-full md:h-275  md:max-h-[275px] nm:w-full w-full px-2 nm:px-2 rounded-3xl minmd:bg-cover lg:bg-cover md:bg-contain z-1  bg-no-repeat">
+            <div data-aos="zoom-in" className="flex z-1 w-[33.3%] h-[250px] md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
+              <div className="flex items-center justify-center cursor-pointer hover:shadow-2xl">
                 <Image src={images.banner1} className="rounded-3xl md:max-w-[339px] md:max-h-[275px]" layout="" objectFit="cover" priority />
-                <p className="absolute flex-1 text-white font-sfnormal md:text-7xl sm:text-5xl text-6xl lg:text-4xl md:justify-self-center text-center">Creatividad</p>
+                <p className="absolute flex-1 text-white font-sfpro font-bold md:text-7xl sm:text-5xl text-6xl lg:text-4xl md:justify-self-center text-center">Creatividad</p>
               </div>
             </div>
-            <div data-aos="zoom-in" className="flex relative sm:space-y-10 md:flex-col z-1 mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
-              <div className="flex items-center justify-center md:py-4 31 h-317 md:w-full md:h-275  md:max-h-[275px] nm:w-full nm:px-2 w-full px-2 rounded-3xl minmd:bg-cover lg:bg-cover md:bg-contain  bg-no-repeat">
+            <div data-aos="zoom-in" className="flex z-1 w-[33.3%] h-[250px] md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
+              <div className="flex items-center justify-center cursor-pointer hover:shadow-2xl">
                 <Image src={images.banner2} className="rounded-3xl md:max-w-[339px] md:max-h-[275px]" layout="" objectFit="cover" priority />
-                <p className="absolute flex-1 text-white font-sfnormal md:text-7xl sm:text-5xl text-6xl lg:text-4xl md:justify-self-center text-center">Conexión</p>
+                <p className="absolute flex-1 text-white font-sfpro font-bold md:text-7xl sm:text-5xl text-6xl lg:text-4xl md:justify-self-center text-center">Conexión</p>
               </div>
             </div>
-            <div data-aos="zoom-in" className="flex z-1 relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
-              <div className="flex  items-center justify-center md:py-4 h-317 md:w-full md:h-275  md:max-h-[275px] nm:px-2 nm:w-full w-full px-2 rounded-3xl minmd:bg-cover lg:bg-cover md:bg-contain bg-no-repeat">
-                <Image src={images.banner3} w={31} className="rounded-3xl md:w-357 md:h-275" layout="" objectFit="cover" priority />
-                <h1 className="absolute flex-1  text-white font-sfnormal text-6xl sm:text-5xl lg:text-4xl md:text-7xl md:justify-self-center text-center">Curiosidad</h1>
+            <div data-aos="zoom-in" className="flex z-1 w-[33.3%] h-[250px] md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
+              <div className="flex items-center justify-center cursor-pointer hover:shadow-2xl">
+                <Image src={images.banner3} w={31} className="rounded-3xl  md:w-357 md:h-275" layout="" objectFit="cover" priority />
+                <h1 className="absolute flex-1  text-white font-sfpro font-bold text-6xl sm:text-5xl lg:text-4xl md:text-7xl md:justify-self-center text-center">Curiosidad</h1>
               </div>
             </div>
           </div>
@@ -95,23 +95,23 @@ function Home() {
             <div className="flex ml-[4rem] nm:ml-0 z-0 nm:z-1 px-14  w-screen top-48 flex-row overflow-scroll no-scrollbar select-none">
               <div className="relative items-center md:z-1 flex flex-col ml-10 bg-cover nm:min-w-240 nm:min-h-327 min-w-[360px] min-h-[480px] nm:w-[246px] nm:h-[380px]">
                 <Image src={images.card1} className="nm:w-[246px] nm:h-[380px]" height={662} width={430} layout="" objectFit="cover" priority />
-                <h1 className=" absolute nm:text-xl lg:text-4xl font-integral text-center mt-[24rem] nm:mt-[16rem] m text-white">VISIÓN</h1>
-                <p className="absolute text-base sm:text-xs text-center px-2 mt-[27rem] nm:mt-[18rem] text-white">Analizamos la naturaleza de tu proyecto, imaginamos y planificamos a gran escala.</p>
+                <h1 className=" absolute nm:text-xl lg:text-4xl font-sfpro font-bold text-center mt-[24rem] nm:mt-[16rem] text-white">VISIÓN</h1>
+                <p className="absolute font-sfpro text-base sm:text-xs text-center px-2 mt-[27rem] nm:mt-[18rem] text-white">Analizamos la naturaleza de tu proyecto, imaginamos y planificamos a gran escala.</p>
               </div>
               <div className="relative items-center z-1 flex flex-col ml-10 bg-cover  nm:min-w-240 nm:min-h-327 min-w-[360px] min-h-[480px] nm:w-[246px] nm:h-[380px]">
                 <Image src={images.card2} className="nm:w-[246px] nm:h-[380px]" height={662} width={430} layout="" objectFit="cover" priority />
-                <h1 className=" absolute nm:text-xl lg:text-4xl font-integral text-center mt-[24rem] nm:mt-[16rem] m text-white">Impulso</h1>
-                <p className="absolute text-base sm:text-xs text-center px-2 mt-[27rem] nm:mt-[18rem] text-white">Desarrollamos un plan e introducimos tu proyecto en la tecnología del futuro.</p>
+                <h1 className=" uppercase absolute nm:text-xl lg:text-4xl font-sfpro font-bold text-center mt-[24rem] nm:mt-[16rem] m text-white">Impulso</h1>
+                <p className="absolute font-sfpro text-base sm:text-xs text-center px-2 mt-[27rem] nm:mt-[18rem] text-white">Desarrollamos un plan e introducimos tu proyecto en la tecnología del futuro.</p>
               </div>
               <div className="relative items-center z-1 flex flex-col ml-10 bg-cover  nm:min-w-240 nm:min-h-327 min-w-[360px] min-h-[480px] nm:w-[246px] nm:h-[380px] ">
                 <Image src={images.card2} className="nm:w-[246px] nm:h-[380px]" height={662} width={430} layout="" objectFit="cover" priority />
-                <h1 className=" absolute nm:text-xl lg:text-4xl font-integral text-center mt-[24rem] nm:mt-[16rem] m text-white">Valor</h1>
-                <p className="absolute text-base sm:text-xs text-center px-2 mt-[27rem] nm:mt-[18rem] text-white">Nos encargamos de crear toda la infraestructura web3 para que tu te dediques a lo que te apasiona.</p>
+                <h1 className="uppercase absolute nm:text-xl lg:text-4xl font-sfpro font-bold text-center mt-[24rem] nm:mt-[16rem] m text-white">Valor</h1>
+                <p className="absolute font-sfpro text-base sm:text-xs text-center px-2 mt-[27rem] nm:mt-[18rem] text-white">Nos encargamos de crear toda la infraestructura web3 para que tu te dediques a lo que te apasiona.</p>
               </div>
               <div className="relative items-center z-1 flex flex-col ml-10 bg-cover  nm:min-w-240 nm:min-h-327 min-w-[360px] min-h-[480px] nm:w-[246px] nm:h-[380px] ">
                 <Image src={images.card2} className="nm:w-[246px] nm:h-[380px]" height={662} width={430} layout="" objectFit="cover" priority />
-                <h1 className=" absolute nm:text-xl lg:text-4xl font-integral text-center mt-[24rem] nm:mt-[16rem] m text-white">Estrategia</h1>
-                <p className="absolute text-base sm:text-xs text-center px-2 mt-[27rem] nm:mt-[18rem] text-white">Creamos una estrategia de comunicación a medida para llegar a todas las personas que puedan interesarse..</p>
+                <h1 className="uppercase absolute nm:text-xl lg:text-4xl font-sfpro font-bold text-center mt-[24rem] nm:mt-[16rem] m text-white">Estrategia</h1>
+                <p className="absolute font-sfpro text-base sm:text-xs text-center px-2 mt-[27rem] nm:mt-[18rem] text-white">Creamos una estrategia de comunicación a medida para llegar a todas las personas que puedan interesarse..</p>
               </div>
             </div>
             <div className="absolute z-0 block -top-[50rem] -left-[75rem]">
@@ -126,11 +126,11 @@ function Home() {
               <h1 className="font-integral text-black  text-left text-3xl minmd:text-6xl">
                 NUESTROS PROYECTOS
               </h1>
-              <p className="text-left text-black minlg:mr-[20rem] minmd:mr-[10rem] lg:mr-[10rem] nm:mr-[1rem] text-sm">
+              <p className="text-left font-sfpro text-black minlg:mr-[20rem] minmd:mr-[10rem] lg:mr-[10rem] nm:mr-[1rem] text-sm">
                 A través de nuestra experiencia hemos creado proyectos especiales para introducir distintas ideas, empresas, artistas y deportistas en la Web3. Desde colecciones de NFTs a Shows en el Metaverso, desde Naked Meta no dejamos de innovar, y ojalá tú puedas ser parte de ese proceso.
               </p>
               <button
-                className="border mt-4 bg-black text-xl md:text-md ml-0 py-2 minlg:px-8 rounded-full font-sf text-left text-white px-6"
+                className="border mt-4 bg-black text-xl md:text-md ml-0 py-2 minlg:px-8 rounded-full font-sfpro text-left text-white px-6"
                 type="button"
               >
                 Conocenos
@@ -145,11 +145,11 @@ function Home() {
             <h1 className="font-integral text-black mt-4 text-center text-2xl ">
               NUESTROS PROYECTOS
             </h1>
-            <p className="text-center text-black mt-2 sm:px-4 md:px-10 text-sm">
+            <p className="text-center text-black font-sfpro mt-2 sm:px-4 md:px-10 text-sm">
               A través de nuestra experiencia hemos creado proyectos especiales para introducir distintas ideas, empresas, artistas y deportistas en la Web3. Desde colecciones de NFTs a Shows en el Metaverso, nuestro objetivo es innovar, y ojalá tú puedas ser parte de ese proceso.
             </p>
             <button
-              className="border mt-4 bg-black text-base md:text-md py-2 sm:py-1 minlg:px-8 rounded-full font-sf text-left text-white px-6 sm:px-6"
+              className="border mt-4 bg-black text-base md:text-md py-2 sm:py-1 minlg:px-8 rounded-full font-sfpro text-left text-white px-6 sm:px-6"
               type="button"
             >
               Contáctanos
@@ -161,24 +161,24 @@ function Home() {
           <div className="flex flex-row sm:mt-4 nm:flex-col sm:py-0 py-[15rem]">
             <div data-aos="fade-right" className="flex sm:mt-2 mt-[10rem] nm:mt-0 justify-start px-[6rem] nm:px-0 items-start flex-col sm:justify-start sm:items-start">
               <h1 className="font-integral text-black mt-10 nm:text-left nm:ml-10 text-7xl nm:text-2xl">HECHOS REALES</h1>
-              <p className="font-sf text-left text-black nm:ml-10 mt-3 text-sm">Conoce los proyectos en los que estamos trabajando.</p>
+              <p className="font-sfpro text-left text-black nm:ml-10 mt-3 text-sm">Conoce los proyectos en los que estamos trabajando.</p>
             </div>
             <div className="hidden nm:flex  md:justify-start md:ml-[2rem] sm:ml-0 nm:px-8 nm:mt-10  w-full top-[6rem] z-1 flex-row overflow-scroll no-scrollbar select-none">
               <div data-aos="flip-right" className="flex relative flex-col rounded-3xl mr-10 bg-cover  min-w-240 w-[289] h-[344px]">
                 <Image src={images.pepe} className="flex " height={344} width={289} layout="" objectFit="cover" priority />
-                <h1 className="absolute text-xl ml-[2rem] px-2 mt-[12rem] m text-white">Pepe Aguilar</h1>
-                <p className="absolute text-xs px-2 ml-[2rem] text-left mt-[14rem] text-white">Naked Meta es la mejor empresa del sector web3</p>
+                <h1 className="absolute text-xl ml-[2rem] px-2 mt-[12rem] font-sfpro font-bold text-white">Pepe Aguilar</h1>
+                <p className="absolute text-xs px-2 ml-[2rem] font-sfpro text-left mt-[14rem] text-white">Naked Meta es la mejor empresa del sector web3</p>
               </div>
               <div data-aos="fade-left" data-aos-duration="3000" className="flex relative flex-col rounded-3xl mr-10 bg-cover  min-w-240 w-[289] h-[344px] ">
                 <Image src={images.pepe} className="" height={344} width={289} layout="" objectFit="cover" priority />
-                <h1 className=" absolute text-xl ml-[2rem] px-2 mt-[12rem] m text-white">Pepe Aguilar</h1>
-                <p className="absolute text-xs px-2 ml-[2rem] text-left mt-[14rem] text-white">Naked Meta es la mejor empresa del sector web3</p>
+                <h1 className=" absolute text-xl ml-[2rem] px-2 mt-[12rem] font-sfpro font-bold text-white">Pepe Aguilar</h1>
+                <p className="absolute text-xs px-2 ml-[2rem] font-sfpro text-left mt-[14rem] text-white">Naked Meta es la mejor empresa del sector web3</p>
 
               </div>
               <div className="relative flex flex-col rounded-3xl mr-10 bg-cover  min-w-240 w-[289] h-[344px] ">
                 <Image src={images.pepe} className="" height={344} width={289} layout="" objectFit="cover" priority />
-                <h1 className=" absolute text-xl ml-[2rem] px-2 mt-[12rem] m text-white">Pepe Aguilar</h1>
-                <p className="absolute text-xs px-2 ml-[2rem] text-left mt-[14rem] text-white">Naked Meta es la mejor empresa del sector web3</p>
+                <h1 className=" absolute text-xl ml-[2rem] px-2 mt-[12rem] font-sfpro font-bold text-white">Pepe Aguilar</h1>
+                <p className="absolute text-xs px-2 ml-[2rem] font-sfpro text-left mt-[14rem] text-white">Naked Meta es la mejor empresa del sector web3</p>
               </div>
             </div>
 
@@ -227,8 +227,8 @@ function Home() {
                     <Image src={images.nico} className="rounded-[2.5rem]" objectFit="cover" height={452} width={247} />
                   </div>
                   <div className="flex w-full items-center justify-center absolute">
-                    <h1 className=" text-2xl font-integral text-center mt-[22rem] m text-black">Nico</h1>
-                    <p className="absolute text-lg px-0 text-center mt-[26rem] text-black">El Oraculo</p>
+                    <h1 className=" text-2xl font-sfpro font-bold text-center mt-[22rem] m text-black">Nico</h1>
+                    <p className="absolute text-lg px-0 font-sfpro text-center mt-[26rem] text-black">El Oráculo</p>
                   </div>
                 </div>
                 <div className="relative bg-meta-gray-3 rounded-[2.5rem] items-center z-1 flex flex-col ml-10 bg-cover  min-w-240 w-[247px] h-[452px]">
@@ -236,8 +236,8 @@ function Home() {
                     <Image src={images.dani} className="rounded-[2.5rem]" objectFit="cover" height={452} width={247} />
                   </div>
                   <div className="flex w-full items-center justify-center absolute">
-                    <h1 className=" text-2xl font-integral text-center mt-[22rem] m text-black">Dani</h1>
-                    <p className="absolute text-lg px-0 text-center mt-[26rem] text-black">El Hombre Descentralizado</p>
+                    <h1 className=" text-2xl font-sfpro font-bold text-center mt-[22rem] m text-black">Dani</h1>
+                    <p className="absolute text-lg px-0 font-sfpro text-center mt-[26rem] text-black">El Hombre Descentralizado</p>
                   </div>
                 </div>
                 <div className="relative bg-meta-gray-3 rounded-[2.5rem] items-center z-1 flex flex-col ml-10 bg-cover  min-w-240 w-[247px] h-[452px]">
@@ -245,8 +245,8 @@ function Home() {
                     <Image src={images.mati} className="rounded-[2.5rem]" objectFit="cover" height={452} width={247} />
                   </div>
                   <div className="flex w-full items-center justify-center absolute">
-                    <h1 className=" text-2xl font-integral text-center mt-[22rem] m text-black">Mati</h1>
-                    <p className="absolute text-lg px-0 text-center mt-[26rem] text-black">El Sinergiador</p>
+                    <h1 className=" text-2xl font-sfpro font-bold text-center mt-[22rem] m text-black">Mati</h1>
+                    <p className="absolute text-lg px-0 font-sfpro text-center mt-[26rem] text-black">El Sinergiador</p>
                   </div>
                 </div>
                 <div className="relative bg-meta-gray-3 rounded-[2.5rem] items-center z-1 flex flex-col ml-10 bg-cover  min-w-240 w-[247px] h-[452px]">
@@ -254,8 +254,8 @@ function Home() {
                     <Image src={images.mike} className="rounded-[2.5rem]" objectFit="cover" height={452} width={247} />
                   </div>
                   <div className="flex w-full items-center justify-center absolute">
-                    <h1 className=" text-2xl font-integral text-center mt-[22rem] m text-black">Mike</h1>
-                    <p className="absolute text-lg px-0 text-center mt-[26rem] text-black">El Diseñador de la Matrix</p>
+                    <h1 className=" text-2xl font-sfpro font-bold text-center mt-[22rem] m text-black">Mike</h1>
+                    <p className="absolute text-lg px-0 font-sfpro text-center mt-[26rem] text-black">El Diseñador de la Matrix</p>
                   </div>
                 </div>
                 <div className="relative bg-meta-gray-3 rounded-[2.5rem] items-center z-1 flex flex-col ml-10 bg-cover  min-w-240 w-[247px] h-[452px]">
@@ -263,8 +263,8 @@ function Home() {
                     <Image src={images.tomi} className="rounded-[2.5rem]" objectFit="cover" height={452} width={247} />
                   </div>
                   <div className="flex w-full items-center justify-center absolute">
-                    <h1 className=" text-2xl font-integral text-center mt-[22rem] m text-black">Tomi</h1>
-                    <p className="absolute text-lg px-0 text-center mt-[26rem] text-black">El Hombre de Palabras</p>
+                    <h1 className=" text-2xl font-sfpro font-bold text-center mt-[22rem] m text-black">Tomi</h1>
+                    <p className="absolute text-lg px-0 font-sfpro text-center mt-[26rem] text-black">El Hombre de Palabras</p>
                   </div>
                 </div>
                 <div className="relative bg-meta-gray-3 rounded-[2.5rem] items-center z-1 flex flex-col ml-10 bg-cover  min-w-240 w-[247px] h-[452px]">
@@ -272,8 +272,8 @@ function Home() {
                     <Image src={images.luis} className="rounded-[2.5rem]" objectFit="cover" height={452} width={247} />
                   </div>
                   <div className="flex w-full items-center justify-center absolute">
-                    <h1 className=" text-2xl font-integral text-center mt-[22rem] m text-black">Luis</h1>
-                    <p className="absolute text-lg px-0 text-center mt-[26rem] text-black">La Voz</p>
+                    <h1 className=" text-2xl font-sfpro font-bold text-center mt-[22rem] m text-black">Luis</h1>
+                    <p className="absolute text-lg px-0 font-sfpro text-center mt-[26rem] text-black">La Voz</p>
                   </div>
                 </div>
 

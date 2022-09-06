@@ -82,7 +82,7 @@ function Navbar() {
             )}
 
           {isOpen && (
-          <div className="fixed bg-meta-gray h-screen inset-0 overflow-y-hidden top-10 md:top-12 z-10 nav-h flex justify-center items-center flex-col">
+          <div className="fixed bg-meta-gray h-screen z-10 inset-0 overflow-y-hidden top-10 md:top-12 nav-h flex justify-center items-center flex-col">
             <div className="flex-1 p-4">
               <MenuItems active={active} setActive={setActive} isMobile className="items-center" />
             </div>

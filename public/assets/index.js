@@ -21,6 +21,8 @@ import banner3 from './banner3.png';
 import card1 from './card1.png';
 import card2 from './card2.png';
 import card3 from './card3.png';
+import card4 from './card4.png';
+import card5 from './card5.png';
 import section4 from './section4.png';
 import section5 from './mobile3.png';
 import pepe from './pepe.png';
@@ -32,6 +34,15 @@ import mati from './mati.png';
 import tomi from './tomi.png';
 import mike from './mike.png';
 import luis from './luis.png';
+import nacky from './nacky.png';
+import nackydesktop from './nackydesktop.png';
+import diego from './diego.jpg';
+import rojkind from './rojkind.jpg';
+import ka from './ka.jpg';
+import humo from './humo.jpg';
+import javi from './javi.jpg';
+import marcos from './marco.jpg';
+import debook from './debook.jpg';
 
 export default {
   nft1,
@@ -56,6 +67,8 @@ export default {
   card1,
   card2,
   card3,
+  card4,
+  card5,
   section4,
   section5,
   pepe,
@@ -68,4 +81,13 @@ export default {
   tomi,
   mike,
   luis,
+  nacky,
+  nackydesktop,
+  diego,
+  rojkind,
+  ka,
+  humo,
+  javi,
+  marcos,
+  debook,
 };

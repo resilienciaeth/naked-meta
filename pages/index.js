@@ -92,9 +92,9 @@ function Home() {
                 <p className="text-left text-black font-integral font-bold px-0 uppercase mt-[2rem] md:mt-16 md:text-xl md:text-center text-3xl">¿Por qué trabajar con nosotros?</p>
               </div>
               <div className="flex absolute  mt-[26rem] nm:hidden ">
-                <Image src={images.number1} className="p-2" />
+                <p className="font-bold font-sfpro text-2xl">01 </p>
                 <Image src={images.line2} width={250} height={0} />
-                <Image src={images.number3} />
+                <p className="font-bold font-sfpro text-2xl"> 04</p>
               </div>
               <div className="flex absolute w-430  nm:hidden mt-[30rem]">
                 <div className="absolute cursor-pointer left-[2rem]">

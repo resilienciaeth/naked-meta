@@ -19,13 +19,13 @@ function MenuItems({ isMobile, active, setActive }) {
 
   return (
     <ul className={`list-none flexCenter space-x-12 md:space-x-0 sm:space-x-0 flex-row ${isMobile && 'flex-col h-full'}`}>
-      {['Home', 'Sobre Nosotros', 'Proyectos', 'Team'].map((item, i) => (
+      {['Instagram', 'Contáctanos', 'Proyectos', 'Carreras'].map((item, i) => (
         <li
           key={i}
           onClick={() => {
             setActive(item);
           }}
-          className={`flex flex-row font-sf text-lg items-center font-poppins font-semibold text-base text-black hover:text-slate-600 mx-3 ${active === item ? 'text-nft-black' : 'text-black'}`}
+          className={`flex flex-row font-sfpro text-lg items-center font-semibold text-base text-black hover:text-slate-600 mx-3 ${active === item ? 'text-nft-black' : 'text-black'}`}
         >
           <Link href={generateLink(i)}>
             {item}

@@ -66,31 +66,31 @@
 }
 
 .bg-debook {
-    background-image: url('../public/assets/debook.jpg');
+    background-image: url('/assets/debook.jpg');
 }
 
 .bg-ka {
-    background-image: url('../public/assets/ka.jpg');
+    background-image: url('/assets/ka.jpg');
 }
 
 .bg-rojkind {
-    background-image: url('../public/assets/rojkind.jpg');
+    background-image: url('/assets/rojkind.jpg');
 }
 
 .bg-humo {
-    background-image: url('../public/assets/humo.jpg');
+    background-image: url('/assets/humo.jpg');
 }
 
 .bg-marcos {
-    background-image: url('../public/assets/marco.jpg');
+    background-image: url('/assets/marco.jpg');
 }
 
 .bg-javi {
-    background-image: url('../public/assets/javi.jpg');
+    background-image: url('/assets/javi.jpg');
 }
 
 .bg-diego{
-    background-image: url('../public/assets/diego.jpg');
+    background-image: url('/assets/diego.jpg');
 }
 
 .client {

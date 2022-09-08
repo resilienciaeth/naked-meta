@@ -57,13 +57,12 @@
 }
 
 
-
 .bg-banner1 {
     background-image: url('../public/assets/banner1.png');
 }
 
 .bg-pepe {
-    background-image: url('../public/assets/pepe.png');
+    background-image: url('/assets/pepe.png');
 }
 
 .bg-debook {

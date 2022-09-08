@@ -272,7 +272,6 @@ function Home() {
                 </div>
               </div>
             </div>
-
           </div>
           <div>
             <div data-aos="fade-up" className="flex flex-col h-[700px] justify-center items-center">

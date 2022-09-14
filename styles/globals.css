@@ -322,6 +322,36 @@ client:hover .client-description{
     align-items: flex-start;
 }
 
+.intro {
+    height: 100vh;
+    background-color: black;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+.section {
+    height: 100vh;
+    color: black;
+}
+
+.section h1{
+    padding-top: 300px;
+    text-align: center;
+    font-size: 60px;
+}
+
 
 
 @keyframes fadeIn {
@@ -333,3 +363,4 @@ client:hover .client-description{
         opacity: 1;
     }
 }
+

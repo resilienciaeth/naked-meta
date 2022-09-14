@@ -24,7 +24,7 @@ import card3 from './card3.png';
 import card4 from './card4.png';
 import card5 from './card5.png';
 import section4 from './section4.png';
-import section5 from './mobile3.png';
+import section5 from './section5.png';
 import pepe from './pepe.png';
 import pepe2 from './pepe2.png';
 import nico from './nico.png';
@@ -43,6 +43,10 @@ import humo from './humo.jpg';
 import javi from './javi.jpg';
 import marcos from './marco.jpg';
 import debook from './debook.jpg';
+import web3 from './web3.png';
+import icon1 from './icon1.png';
+import icon2 from './icon2.png';
+import icon3 from './icon3.png';
 
 export default {
   nft1,
@@ -90,4 +94,8 @@ export default {
   javi,
   marcos,
   debook,
+  web3,
+  icon1,
+  icon2,
+  icon3,
 };

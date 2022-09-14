@@ -45,43 +45,67 @@ function Home() {
           </div>
         </div>
         {/* Nacky */}
-        <div className="flex overflow-hidden z-10 mt-[8rem] minmd:mt-[15rem] nm:mt-10 sm:mt-12 flex-col m-0 justify-center">
+        <div className="flex overflow-hidden z-1 mt-[8rem] minmd:mt-[15rem] nm:mt-10 sm:mt-12 flex-col m-0 justify-center">
           <div className="w-full h-full flex md:flex-col flex-row-reverse items-center justify-center  mb-10">
             <div data-aos="fade-left" className="w-full hidden md:w-full md:flex md:items-center justify-center ">
-              <Image src={images.nacky} width={278} height={523} />
+              <Image src={images.nacky} width={323} height={339} />
             </div>
             <div data-aos="fade-left" className="w-[50%] md:hidden md:w-full flex items-center ">
-              <Image src={images.nackydesktop} width={420} height={790} />
+              <Image src={images.nacky} width={550} height={578} />
             </div>
-            <div className="w-[50%] md:w-full md:mt-10 relative z-1 flex items-end md:items-center flex-col ml-[6rem] md:ml-0">
-              <p className="text-black text-4xl md:text-2xl w-[80%] md:w-[100%] text-left md:text-center font-sfpro font-bold">Web3 con conciencia</p>
-              <p className="text-black z-10  mt-4 w-[80%] md:w-[100%] md:px-[3rem] text-left md:text-center text-base font-sfpro">Naked Meta nace para acompañarte en la exploración del mundo Web3. Nuestro objetivo es que puedas comprenderlo para sumergirte de forma consciente, sencilla y eficaz.</p>
+            <div className="w-[50%] z-1 md:mt-10 md:w-full flex flex-col items-center justify-start md:px-10">
+              <div className="flex flex-col items-center justify-center w-[50%] md:w-full ">
+                <p className="text-[35px] w-full font-sfpro font-bold text-left md:text-[26px] md:text-center">Web3 con conciencia</p>
+                <p className="font-sfpro md:text-center w-full text-[18px] text-left md:text-[12px] ">Naked Meta nace para acompañarte en la exploración del mundo Web3. Nuestro objetivo es que puedas comprenderlo para sumergirte de forma consciente, sencilla y eficaz.</p>
+              </div>
+              <div className="flex flex-col justify-start ">
+                <button
+                  type="button"
+                  className=" border mt-4 bg-black text-xl nm:text-xl sm:text-base md:text-md py-2 px-8 nm:px-6  minlg:px-8 rounded-full font-sfpro text-left text-white"
+                  onClick={() => {}}
+                >
+                  Conócenos
+
+                </button>
+              </div>
             </div>
           </div>
-          <div className="flex mt-10 z-1 justify-center items-center mb-10">
-            <p className="text-black text-4xl md:text-2xl font-bold">Nuestros valores</p>
+          {/* nuestros valores */}
+          <div className="flex mt-[5rem] z-1 justify-center items-center mb-10">
+            <p className="text-black text-4xl md:text-[25px] font-bold">Nuestros valores</p>
           </div>
-          <div className="px-10">
-            <div className="flex lg:mt-4 minmd:mt-10 nm:flex-row md:flex-col nm:-mt-6">
-              <div data-aos="zoom-in" className="flex z-1 w-[33.3%] px-2 h-full md:w-full md:h-[33%] rounded-full  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
-                <div className="flex items-center justify-center ">
-                  <Image src={images.banner1} className="rounded-3xl md:max-w-[339px] md:max-h-[275px]" layout="" objectFit="cover" priority />
-                  <p className="absolute flex-1 text-white font-sfpro font-bold  md:text-2xl text-6xl lg:text-4xl md:justify-self-center text-center">Creatividad</p>
-                </div>
+          <div className="flex z-1 md:space-y-[5rem] flex-row md:flex-col mt-10 w-full items-center justify-center px-[2rem]">
+            <div className="flex flex-col w-[33%] md:w-full items-center justify-center">
+              <div className="hidden md:flex">
+                <Image src={images.icon1} width={198} height={91} />
               </div>
-              <div data-aos="zoom-in" className="flex z-1 w-[33.3%] px-2 h-full md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
-                <div className="flex items-center justify-center ">
-                  <Image src={images.banner2} className="rounded-3xl md:max-w-[339px] md:max-h-[275px]" layout="" objectFit="cover" priority />
-                  <p className="absolute flex-1 text-white font-sfpro font-bold md:text-2xl text-6xl lg:text-4xl md:justify-self-center text-center">Conexión</p>
-                </div>
+              <div className="flex md:hidden">
+                <Image src={images.icon1} width={252} height={116} />
               </div>
-              <div data-aos="zoom-in" className="flex z-1 w-[33.3%] bg-transparent px-2 h-full md:w-full md:h-[33%] rounded-3xl  relative sm:space-y-10 md:flex-col mt-10 nm:mt-0 md:mt-[16rem] sm:mt-[7rem] xs:mt-[1rem] justify-between md:items-center md:bg-cover md:justify-center">
-                <div className="flex items-center justify-center ">
-                  <Image src={images.banner3} w={31} className="rounded-3xl  md:w-357 md:h-275" layout="" objectFit="cover" priority />
-                  <h1 className="absolute flex-1  text-white font-sfpro font-bold md:text-2xl text-6xl lg:text-4xl md:justify-self-center text-center">Curiosidad</h1>
-                </div>
-              </div>
+              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px]">Mundo Web3</h1>
+              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
             </div>
+            <div className="flex flex-col w-[33%] md:w-full items-center justify-center">
+              <div className="hidden md:flex">
+                <Image src={images.icon2} width={142} height={77} />
+              </div>
+              <div className="md:hidden flex">
+                <Image src={images.icon2} width={216} height={117} />
+              </div>
+              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px]">Mundo Web3</h1>
+              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
+            </div>
+            <div className="flex flex-col w-[33%] md:w-full items-center justify-center">
+              <div className="hidden md:flex">
+                <Image src={images.icon3} width={163} height={150} />
+              </div>
+              <div className="flex md:hidden">
+                <Image src={images.icon3} width={200} height={117} />
+              </div>
+              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px]">Mundo Web3</h1>
+              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
+            </div>
+
           </div>
         </div>
         {/* Por que trabajar con nosotros */}
@@ -156,7 +180,7 @@ function Home() {
         {/* Hechos reales mobile */}
         <div className="hidden overflow-hidden md:w-full sm:mt-[6rem] md:z-1 m-0 md:flex md:flex-col">
           <Image src={images.section5} className="" layout="" objectFit="cover" priority />
-          <div data-aos="fade-up" className="flex absolute sm:mt-8 md:mt-10 flex-col minmd:mt-44 justify-start items-center h-317 md:w-full md:h-275 md:z-1">
+          <div data-aos="fade-up" className="flex absolute sm:mt-0 md:mt-10 flex-col minmd:mt-44 justify-start items-center h-317 md:w-full md:h-[300px] md:z-1">
             <h1 className="font-integral text-black mt-4 text-center text-2xl ">
               HECHOS REALES
             </h1>
@@ -164,7 +188,7 @@ function Home() {
               A través de nuestra experiencia hemos creado proyectos especiales para introducir distintas ideas, empresas, artistas y deportistas en la Web3. Desde colecciones de NFTs a Shows en el Metaverso, nuestro objetivo es innovar, y ojalá tú puedas ser parte de ese proceso.
             </p>
             <button
-              className="border mt-4 bg-black text-base md:text-md py-2 sm:py-1 minlg:px-8 rounded-full font-sfpro text-left text-white px-6 sm:px-6"
+              className="border mt-1 bg-black text-base md:text-md py-2 sm:py-1 minlg:px-8 rounded-full font-sfpro text-left text-white px-6 sm:px-6"
               type="button"
             >
               Contáctanos

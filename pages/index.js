@@ -13,7 +13,7 @@ function Home() {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div className="flex relative min-w-327  bg-meta-gray justify-center">
+    <div className="flex relative min-w-327  bg-meta-gray justify-center ">
       <div className="w-full relative max-w-max">
         {/* Titulo */}
         <div className="flex relative mt-72 md:mt-32 nm:mt-42 sm:mt-10 px-32 md:px-8 nm:px-12  flex-row md:flex-col-reverse ">
@@ -55,8 +55,8 @@ function Home() {
             </div>
             <div className="w-[50%] z-1 md:mt-10 md:w-full flex flex-col items-center justify-start md:px-10">
               <div className="flex flex-col items-center justify-center w-[50%] md:w-full ">
-                <p className="text-[35px] w-full font-sfpro font-bold text-left md:text-[26px] md:text-center">Web3 con conciencia</p>
-                <p className="font-sfpro md:text-center w-full text-[18px] text-left md:text-[12px] ">Naked Meta nace para acompañarte en la exploración del mundo Web3. Nuestro objetivo es que puedas comprenderlo para sumergirte de forma consciente, sencilla y eficaz.</p>
+                <p className="text-[35px] w-full font-sfpro font-bold text-left md:text-[26px] md:text-center text-black">Web3 con conciencia</p>
+                <p className="font-sfpro md:text-center w-full text-[18px] text-left md:text-[12px] text-black ">Naked Meta nace para acompañarte en la exploración del mundo Web3. Nuestro objetivo es que puedas comprenderlo para sumergirte de forma consciente, sencilla y eficaz.</p>
               </div>
               <div className="flex flex-col justify-start ">
                 <button
@@ -82,8 +82,8 @@ function Home() {
               <div className="flex md:hidden">
                 <Image src={images.icon1} width={252} height={116} />
               </div>
-              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px]">Mundo Web3</h1>
-              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
+              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Mundo Web3</h1>
+              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem] text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
             </div>
             <div className="flex flex-col w-[33%] md:w-full items-center justify-center">
               <div className="hidden md:flex">
@@ -92,8 +92,8 @@ function Home() {
               <div className="md:hidden flex">
                 <Image src={images.icon2} width={216} height={117} />
               </div>
-              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px]">Mundo Web3</h1>
-              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
+              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Mundo Web3</h1>
+              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem] text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
             </div>
             <div className="flex flex-col w-[33%] md:w-full items-center justify-center">
               <div className="hidden md:flex">
@@ -102,8 +102,8 @@ function Home() {
               <div className="flex md:hidden">
                 <Image src={images.icon3} width={200} height={117} />
               </div>
-              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px]">Mundo Web3</h1>
-              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
+              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Mundo Web3</h1>
+              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem] text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
             </div>
 
           </div>
@@ -116,9 +116,9 @@ function Home() {
                 <p className="text-left text-black font-integral font-bold px-0 uppercase mt-[2rem] md:mt-16 md:text-xl md:text-center text-3xl">¿Por qué trabajar con nosotros?</p>
               </div>
               <div className="flex absolute  mt-[26rem] nm:hidden ">
-                <p className="font-bold font-sfpro text-2xl">01 </p>
+                <p className="font-bold font-sfpro text-2xl text-black">01 </p>
                 <Image src={images.line2} width={250} height={0} />
-                <p className="font-bold font-sfpro text-2xl"> 04</p>
+                <p className="font-bold font-sfpro text-2xl text-black"> 04</p>
               </div>
               <div className="flex absolute w-430  nm:hidden mt-[30rem]">
                 <div className="absolute cursor-pointer left-[2rem]">

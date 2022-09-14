@@ -72,7 +72,7 @@ function Home() {
           </div>
           {/* nuestros valores */}
           <div className="flex mt-[5rem] z-1 justify-center items-center mb-10">
-            <p className="text-black text-4xl md:text-[25px] font-bold">Nuestros valores</p>
+            <p className="text-black text-4xl md:text-[25px] font-bold">Nuestros servicios</p>
           </div>
           <div className="flex z-1 md:space-y-[5rem] flex-row md:flex-col mt-10 w-full items-center justify-center px-[2rem]">
             <div className="flex flex-col w-[33%] md:w-full items-center justify-center">

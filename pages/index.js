@@ -82,8 +82,8 @@ function Home() {
               <div className="flex md:hidden">
                 <Image src={images.icon1} width={252} height={116} />
               </div>
-              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Mundo Web3</h1>
-              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem] text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
+              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Proyectos NFTs</h1>
+              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem] text-black">Lanzamos proyectos utilizando tecnología NFT. Para ello, desarrollamos smart contracts, artes, sitios webs, marketplaces, branding, estrategia de marketing y contenidos.</p>
             </div>
             <div className="flex flex-col w-[33%] md:w-full items-center justify-center">
               <div className="hidden md:flex">
@@ -92,8 +92,8 @@ function Home() {
               <div className="md:hidden flex">
                 <Image src={images.icon2} width={216} height={117} />
               </div>
-              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Mundo Web3</h1>
-              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem] text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
+              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Eventos en el Metaverso.</h1>
+              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem] text-black">Diseñamos proyectos utilizando la realidad virtual, para lograrlo, buscamos el metaverso indicado, construimos los espacios y planificamos la comunicación.</p>
             </div>
             <div className="flex flex-col w-[33%] md:w-full items-center justify-center">
               <div className="hidden md:flex">
@@ -102,8 +102,8 @@ function Home() {
               <div className="flex md:hidden">
                 <Image src={images.icon3} width={200} height={117} />
               </div>
-              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Mundo Web3</h1>
-              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem] text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis mollis interdum. Etiam ornare arcu sed sapien feugiat, sed lobortis magna molestie. Aliquam erat volutpat. Vivamus imperdiet tempor velit.</p>
+              <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Educación Web3</h1>
+              <p className="font-sfpro text-[18px] md:text-[12px] text-center px-[2rem] text-black">Ofrecemos contenido educativo y creamos una comunidad NFT de acceso gratuito para que las personas aprendan todo sobre la Web3.</p>
             </div>
 
           </div>

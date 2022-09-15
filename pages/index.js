@@ -300,7 +300,7 @@ function Home() {
           <div>
             <div data-aos="fade-up" className="flex flex-col h-[700px] justify-center items-center">
               <div>
-                <h1 className="font-integral mt-10 text-black text-center text-2xl">MEET THE TEAM</h1>
+                <h1 className="font-integral mt-10 text-black text-center text-2xl">CONOCE EL EQUIPO</h1>
               </div>
               <div className="flex mt-10 lg:justify-start nm:justify-start px-10 w-screen top-48 flex-row overflow-scroll no-scrollbar select-none">
                 <div className="relative bg-meta-gray-3 rounded-[2.5rem] items-center z-1 flex flex-col ml-10 bg-cover  min-w-240 w-[247px] h-[452px]">

@@ -165,7 +165,7 @@ function Home() {
                 HECHOS REALES
               </h1>
               <p className="text-left font-sfpro text-black minlg:mr-[20rem] minmd:mr-[10rem] lg:mr-[10rem] nm:mr-[1rem] text-sm">
-                A través de nuestra experiencia hemos creado proyectos especiales para introducir distintas ideas, empresas, artistas y deportistas en la Web3. Desde colecciones de NFTs a Shows en el Metaverso, desde Naked Meta no dejamos de innovar, y ojalá tú puedas ser parte de ese proceso.
+                A través de nuestra experiencia hemos creado proyectos especiales para introducir distintas ideas, empresas, artistas y deportistas en la Web3. Desde colecciones de NFTs a Shows en el Metaverso, en Naked Meta no dejamos de innovar, y ojalá tú puedas ser parte de ese proceso.
               </p>
               <button
                 className="border mt-4 bg-black text-xl md:text-md ml-0 py-2 minlg:px-8 rounded-full font-sfpro text-left text-white px-6"

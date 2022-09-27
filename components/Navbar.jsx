@@ -6,20 +6,21 @@ import Link from 'next/link';
 
 import images from '../public/assets';
 
-function MenuItems({ isMobile, active, setActive }) {
+function MenuItems({
+  isMobile, active, setActive, services,
+}) {
   const generateLink = (i) => {
     switch (i) {
-      case 0: return '/';
-      case 1: return '/nakedmeta';
-      case 2: return '/';
-      case 3: return '/';
+      case 0: return 'https://www.instagram.com/nakedmeta/';
+      case 1: return 'https://airtable.com/shrVIeDudUj7PTpTe';
+      case 2: return 'https://airtable.com/shr9SydcVwMtaQ43h';
       default: return '/';
     }
   };
 
   return (
     <ul className={`list-none flexCenter space-x-12 md:space-x-0 sm:space-x-0 flex-row ${isMobile && 'flex-col h-full'}`}>
-      {['Instagram', 'Contáctanos', 'Proyectos', 'Carreras'].map((item, i) => (
+      {['Instagram', 'Contáctanos', 'Carreras'].map((item, i) => (
         <li
           key={i}
           onClick={() => {

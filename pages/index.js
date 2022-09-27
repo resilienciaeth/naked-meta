@@ -2,13 +2,24 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import images from '../public/assets';
 
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 
 function Home() {
+  const web3 = useRef(null);
+  const services = useRef(null);
+  const clients = useRef(null);
+  const projects = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -26,7 +37,7 @@ function Home() {
               <button
                 type="button"
                 className=" border mt-4 bg-black text-xl nm:text-xl sm:text-base md:text-md py-2 px-8 nm:px-6  minlg:px-8 rounded-full font-sfpro text-left text-white"
-                onClick={() => {}}
+                onClick={() => scrollToSection(web3)}
               >
                 Conócenos
 
@@ -45,26 +56,26 @@ function Home() {
           </div>
         </div>
         {/* Nacky */}
-        <div className="flex overflow-hidden z-1 mt-[8rem] minmd:mt-[15rem] nm:mt-10 sm:mt-12 flex-col m-0 justify-center">
-          <div className="w-full h-full flex md:flex-col flex-row-reverse items-center justify-center  mb-10">
-            <div data-aos="fade-left" className="w-full hidden md:w-full md:flex md:items-center justify-center ">
+        <div ref={web3} className=" flex  overflow-hidden z-1 mt-[10rem] minmd:mt-[15rem] nm:mt-10 sm:mt-[4rem] flex-col m-0 justify-center">
+          <div className="w-full h-full flex md:flex-col flex-row-reverse items-center justify-center nm:items-start nm:justify-start  mb-10">
+            <div data-aos="fade-left" className="w-full hidden md:w-full md:flex md:items-start justify-center ">
               <Image src={images.nacky} width={323} height={339} />
             </div>
-            <div data-aos="fade-left" className="w-[50%] md:hidden md:w-full flex items-center ">
+            <div data-aos="fade-left" className="w-[50%] md:hidden md:w-full flex">
               <Image src={images.nacky} width={550} height={578} />
             </div>
-            <div className="w-[50%] z-1 md:mt-10 md:w-full flex flex-col items-center justify-start md:px-10">
-              <div className="flex flex-col items-center justify-center w-[50%] md:w-full ">
+            <div className="w-[50%] z-1 md:mt-0 md:w-full flex flex-col items-center justify-start mt-[5rem]  md:px-10">
+              <div className="flex flex-col items-center justify-center w-[50%] md:w-full mt-[6rem] ">
                 <p className="text-[35px] w-full font-sfpro font-bold text-left md:text-[26px] md:text-center text-black">Web3 con conciencia</p>
                 <p className="font-sfpro md:text-center w-full text-[18px] text-left md:text-base text-black ">Naked Meta nace para acompañarte en la exploración del mundo Web3. Nuestro objetivo es que puedas comprenderlo para sumergirte de forma consciente, sencilla y eficaz.</p>
               </div>
-              <div className="flex flex-col justify-start ">
+              <div className="flex flex-col w-[50%] justify-start items-start">
                 <button
                   type="button"
                   className=" border mt-4 bg-black text-xl nm:text-xl sm:text-base md:text-md py-2 px-8 nm:px-6  minlg:px-8 rounded-full font-sfpro text-left text-white"
-                  onClick={() => {}}
+                  onClick={() => scrollToSection(services)}
                 >
-                  Conócenos
+                  Descubre Más
 
                 </button>
               </div>
@@ -72,7 +83,7 @@ function Home() {
           </div>
           {/* nuestros valores */}
           <div className="flex mt-[5rem] z-1 justify-center items-center mb-10">
-            <p className="text-black text-4xl md:text-[25px] font-bold">Nuestros servicios</p>
+            <p ref={services} className="text-black text-4xl md:text-[25px] font-bold">Nuestros servicios</p>
           </div>
           <div className="flex z-1 md:space-y-[5rem] flex-row md:flex-col mt-10 w-full items-center justify-center px-[2rem]">
             <div className="flex flex-col w-[33%] md:w-full items-center justify-center">
@@ -97,10 +108,10 @@ function Home() {
             </div>
             <div className="flex flex-col w-[33%] md:w-full items-center justify-center">
               <div className="hidden md:flex">
-                <Image src={images.icon3} width={163} height={150} />
+                <Image src={images.icon3} width={142} height={77} />
               </div>
               <div className="flex md:hidden">
-                <Image src={images.icon3} width={200} height={117} />
+                <Image src={images.icon3} width={216} height={117} />
               </div>
               <h1 className="font-sfpro mt-10 font-bold text-[30px] md:text-[25px] text-black">Educación Web3</h1>
               <p className="font-sfpro text-[18px] md:text-base text-center px-[2rem] text-black">Ofrecemos contenido educativo y creamos una comunidad NFT de acceso gratuito para que las personas aprendan todo sobre la Web3.</p>
@@ -150,7 +161,7 @@ function Home() {
                 <p className="absolute font-sfpro text-base sm:text-xs text-center sm:px-0 px-2 mt-[27rem] nm:mt-[18rem] text-white">Construimos una estrategia de comunicación para llegar a tu público ideal.</p>
               </div>
             </div>
-            <div className="absolute z-0 block -top-[80rem] md:mt-[30rem] -left-[75rem]">
+            <div className="absolute z-0 block -top-[80rem] md:mt-[30rem] -left-[75rem] opacity-50">
               <Image src={images.image1} width={1822} height={1822} className="overflow-hidden absolute" />
             </div>
           </div>
@@ -163,14 +174,16 @@ function Home() {
               <h1 className="font-integral text-black  text-left text-3xl minmd:text-6xl">
                 HECHOS REALES
               </h1>
-              <p className="text-left font-sfpro text-black minlg:mr-[20rem] minmd:mr-[10rem] lg:mr-[10rem] nm:mr-[1rem] text-sm">
+              <p className="text-left font-sfpro text-black minlg:mr-[20rem] minmd:mr-[10rem] lg:mr-[10rem] nm:mr-[1rem] text-sm mt-6">
                 A través de nuestra experiencia hemos creado proyectos especiales para introducir distintas ideas, empresas, artistas y deportistas en la Web3. Desde colecciones de NFTs a Shows en el Metaverso, en Naked Meta no dejamos de innovar, y ojalá tú puedas ser parte de ese proceso.
               </p>
               <button
                 className="border mt-4 bg-black text-xl md:text-md ml-0 py-2 minlg:px-8 rounded-full font-sfpro text-left text-white px-6"
                 type="button"
+                onClick={() => window.open('https://airtable.com/shrVIeDudUj7PTpTe', '_blank')}
+
               >
-                Conocenos
+                Contáctanos
 
               </button>
             </div>
@@ -189,17 +202,18 @@ function Home() {
             <button
               className="border mt-1 bg-black text-base md:text-md py-2 sm:py-1 minlg:px-8 rounded-full font-sfpro text-left text-white px-6 sm:px-6"
               type="button"
+              onClick={() => window.open('https://airtable.com/shrVIeDudUj7PTpTe', '_blank')}
             >
               Contáctanos
 
             </button>
           </div>
         </div>
-        <div className="h-screen w-full">
-          <div className="flex sm:mt-4 flex-col items-center justify-center md:items-start sm:py-0 py-[15rem]">
+        <div className="w-full">
+          <div className="flex sm:mt-4 flex-col items-center justify-center md:items-start sm:py-0 py-[5rem]">
             <div className="flex sm:mt-2 mt-[10rem] nm:mt-0 justify-start px-[6rem] nm:px-0 items-center md:items-start flex-col sm:justify-start sm:items-center sm:px-0">
               <h1 className="font-integral text-black mt-10 nm:text-left nm:ml-8 text-7xl nm:text-2xl">NUESTROS PROYECTOS</h1>
-              <p className="font-sfpro text-center ml-4  text-black mt-3 text-xs">Conoce los proyectos en los que estamos trabajando.</p>
+              <p className="font-sfpro text-center ml-4  text-black mt-3 md:text-xs text-lg ">Conoce los proyectos en los que estamos trabajando.</p>
             </div>
             {/* clientes mobile */}
             <div className="hidden nm:flex  md:justify-start px-10  nm:mt-10  w-full top-[6rem] z-1 flex-row overflow-scroll no-scrollbar select-none">
@@ -245,61 +259,61 @@ function Home() {
               </div>
             </div>
             {/* clientes desktop */}
-            <div className="flex mt-[5rem] h-full min-h-full nm:hidden  md:mt-10 top-48 z-1 flex-row overflow-scroll no-scrollbar select-none">
+            <div className="flex mt-[5rem] nm:hidden  md:mt-10 top-48 z-1 flex-row overflow-scroll no-scrollbar select-none">
               <div className="client bg-pepe">
                 <div className="client-inner">
-                  <div className="client-name font-sfpro">Pepe Aguilar</div>
-                  <div className="client-description">Dime La Meta es el primer Talk Show en el Metaverso</div>
+                  <div className="client-name font-sfpro font-bold">Pepe Aguilar</div>
+                  <div className="client-description text-white font-sfpro">Dime La Meta es el primer Talk Show en el Metaverso</div>
                 </div>
               </div>
               <div className="client bg-javi bg-cover">
                 <div className="client-inner">
-                  <div className="client-name font-sfpro">Chicharito</div>
-                  <div className="client-description">CH14 y Naked Meta están preparando el primer club digital de la estrella Mexicana.</div>
+                  <div className="client-name font-sfpro font-bold">Chicharito</div>
+                  <div className="client-description text-white font-sfpro">CH14 y Naked Meta están preparando el primer club digital de la estrella Mexicana.</div>
                 </div>
               </div>
               <div className="client bg-diego bg-cover">
                 <div className="client-inner">
-                  <div className="client-name font-sfpro">Diego Dreyfus</div>
-                  <div className="client-description">Cacastupido es una colección de 11 NFTs únicos, que dan acceso a conocer a Diego en persona.</div>
+                  <div className="client-name font-sfpro font-bold">Diego Dreyfus</div>
+                  <div className="client-description text-white font-sfpro">Cacastupido es una colección de 11 NFTs únicos, que dan acceso a conocer a Diego en persona.</div>
                 </div>
               </div>
               <div className="client bg-rojkind bg-cover">
                 <div className="client-inner">
-                  <div className="client-name font-sfpro">Michel Rojkind</div>
-                  <div className="client-description">Bey♾nd es un proyecto que propone propiedades virtuales en el Metaverso que van más allá de lo que conocemos como real.</div>
+                  <div className="client-name font-sfpro font-bold">Michel Rojkind</div>
+                  <div className="client-description text-white font-sfpro">Bey♾nd es un proyecto que propone propiedades virtuales en el Metaverso que van más allá de lo que conocemos como real.</div>
                 </div>
               </div>
               <div className="client bg-debook">
                 <div className="client-inner">
-                  <div className="client-name font-sfpro">DEBOOK</div>
-                  <div className="client-description">DEBOOK es la primera plataforma blockchain con el objetivo de tokenizar los libros y hacer de cada libro una red social.</div>
+                  <div className="client-name font-sfpro font-bold">DEBOOK</div>
+                  <div className="client-description text-white font-sfpro">DEBOOK es la primera plataforma blockchain con el objetivo de tokenizar los libros y hacer de cada libro una red social.</div>
                 </div>
               </div>
               <div className="client bg-marcos bg-cover">
                 <div className="client-inner">
-                  <div className="client-name font-sfpro">AlquimiaMC</div>
-                  <div className="client-description">The 77 BADBOYS es la primera colección de Marcos Cojab, conocido como AlquimiaMC</div>
+                  <div className="client-name font-sfpro font-bold">AlquimiaMC</div>
+                  <div className="client-description text-white font-sfpro">The 77 BADBOYS es la primera colección de Marcos Cojab, conocido como AlquimiaMC</div>
                 </div>
               </div>
               <div className="client bg-humo">
                 <div className="client-inner">
-                  <div className="client-name font-sfpro">Humo de Dios</div>
-                  <div className="client-description">Un club privado al que solo accederán aquellos que aporten cierto valor.</div>
+                  <div className="client-name font-sfpro font-bold">Humo de Dios</div>
+                  <div className="client-description text-white font-sfpro">Un club privado al que solo accederán aquellos que aporten cierto valor.</div>
                 </div>
               </div>
               <div className="client bg-ka bg-cover before:">
                 <div className="client-inner">
-                  <div className="client-name font-sfpro">Ka Larraza</div>
-                  <div className="client-description">Libera Femina es un proyecto que quiere empoderar a las mujeres a hacer sus sueños realidad.</div>
+                  <div className="client-name font-sfpro font-bold">Ka Larraza</div>
+                  <div className="client-description text-white font-sfpro">Libera Femina es un proyecto que quiere empoderar a las mujeres a hacer sus sueños realidad.</div>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div data-aos="fade-up" className="flex flex-col h-[700px] justify-center items-center">
+            <div data-aos="fade-up" className="flex flex-col h-[700px] justify-center mt-[2rem] items-center">
               <div>
-                <h1 className="font-integral mt-10 text-black text-center text-2xl">CONOCE EL EQUIPO</h1>
+                <h1 className="font-integral text-black mt-10 nm:text-left nm:ml-8 text-5xl nm:text-2xl">CONOCE EL EQUIPO</h1>
               </div>
               <div className="flex mt-10 lg:justify-start nm:justify-start px-10 w-screen top-48 flex-row overflow-scroll no-scrollbar select-none">
                 <div className="relative bg-meta-gray-3 rounded-[2.5rem] items-center z-1 flex flex-col ml-10 bg-cover  min-w-240 w-[247px] h-[452px]">
@@ -369,10 +383,34 @@ function Home() {
                 <h1 className="font-integral text-black sm:text-3xl md:text-4xl">NAKED META</h1>
               </div>
               <div className="flex w-full flex-row items-center justify-evenly mt-10 sm:mt-4 md:mt-10">
-                <p className="font-bold text-black cursor-pointer hover:text-slate-600 text-sm">Home</p>
-                <p className="font-bold text-black cursor-pointer hover:text-slate-600 text-sm">FAQ</p>
-                <p className="font-bold text-black cursor-pointer hover:text-slate-600 text-sm">Instagram</p>
-                <p className="font-bold text-black cursor-pointer hover:text-slate-600 text-sm">Twitter</p>
+                <p
+                  onClick={() => window.open('https://airtable.com/shrVIeDudUj7PTpTe', '_blank')}
+                  className="font-bold text-black cursor-pointer hover:text-slate-600 text-sm"
+                >
+                  Carreras
+
+                </p>
+                <p
+                  onClick={() => window.open('https://airtable.com/shrVIeDudUj7PTpTe', '_blank')}
+                  className="font-bold text-black cursor-pointer hover:text-slate-600 text-sm"
+                >
+                  Contáctanos
+
+                </p>
+                <p
+                  onClick={() => window.open('https://www.instagram.com/nakedmeta/', '_blank')}
+                  className="font-bold text-black cursor-pointer hover:text-slate-600 text-sm"
+                >
+                  Instagram
+
+                </p>
+                <p
+                  onClick={() => window.open('https://www.tiktok.com/@nakedmeta', '_blank')}
+                  className="font-bold text-black cursor-pointer hover:text-slate-600 text-sm"
+                >
+                  TikTok
+
+                </p>
               </div>
               <div className=" mt-9 sm:mt-4 text-black  md:mt-10 mb-[6rem] sm:text-xs">
                 2022. Naked Meta. Todos los derechos reservados.
